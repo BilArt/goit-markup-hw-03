@@ -55,7 +55,7 @@ ul {
 }
 
 .contact-link {
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .custom-link:hover {
@@ -108,7 +108,11 @@ ul {
 /* team-section */
 
 .team-section {
-    background-color: var(--cloud-color);
+  background-color: var(--cloud-color);
+}
+
+.team-section__list-item {
+  background-color: var(--white-color);
 }
 
 /* portfolio */
