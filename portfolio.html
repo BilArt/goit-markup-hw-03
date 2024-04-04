@@ -11,47 +11,71 @@
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,800;1,800&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet"
   />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+  />
   <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
   <body>
-    <header class="flex">
-      <nav>
-        <ul class="">
-          <li>
-            <a class="custom-link__logo" href="./index.html"
-              ><span>WEB</span>STUDIO</a
-            >
-          </li>
-          <li><a class="custom-link" href="index.html">Studio</a></li>
-          <li><a class="custom-link" href="portfolio.html">Portfolio</a></li>
-          <li><a class="custom-link" href="/">Contacts</a></li>
-        </ul>
-      </nav>
-      <address>
-        <ul class="">
-          <li>
-            <a class="custom-link contact-link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a class="custom-link contact-link" href="tel:+110001111111"
-              >+11 (000) 111-11-11</a
-            >
-          </li>
-        </ul>
-      </address>
+    <header>
+      <div class="header__container flex">
+        <nav>
+          <ul class="flex header__menu">
+            <li>
+              <a class="custom-link__logo" href="./index.html"
+                ><span>WEB</span>STUDIO</a
+              >
+            </li>
+            <li><a class="custom-link" href="index.html">Studio</a></li>
+            <li><a class="custom-link" href="portfolio.html">Portfolio</a></li>
+            <li><a class="custom-link" href="/">Contacts</a></li>
+          </ul>
+        </nav>
+        <address>
+          <ul class="flex header__address">
+            <li>
+              <a
+                class="custom-link contact-link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="custom-link contact-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </header>
 
     <main>
       <section class="portfolio-section">
         <h1>Портфоліо</h1>
         <ul class="flex">
-          <li><button class="portfolio-section__button" type="button">All</button></li>
-          <li><button class="portfolio-section__button" type="button">Web Site</button></li>
-          <li><button class="portfolio-section__button" type="button">App</button></li>
-          <li><button class="portfolio-section__button" type="button">Design</button></li>
-          <li><button class="portfolio-section__button" type="button">Marketing</button></li>
+          <li>
+            <button class="portfolio-section__button" type="button">All</button>
+          </li>
+          <li>
+            <button class="portfolio-section__button" type="button">
+              Web Site
+            </button>
+          </li>
+          <li>
+            <button class="portfolio-section__button" type="button">App</button>
+          </li>
+          <li>
+            <button class="portfolio-section__button" type="button">
+              Design
+            </button>
+          </li>
+          <li>
+            <button class="portfolio-section__button" type="button">
+              Marketing
+            </button>
+          </li>
         </ul>
 
         <ul class="">
@@ -168,11 +192,15 @@
     </main>
 
     <footer class="footer">
-      <a class="custom-link__logo" href="./index.html"><span>WEB</span>STUDIO</a>
-      <p>
-        Increase the flow of&nbsp;customers and sales for your business with
-        digital marketing &amp;&nbsp;growth solutions.
-      </p>
+      <div class="footer__container">
+        <a class="custom-link__logo" href="./index.html"
+          ><span>WEB</span>STUDIO</a
+        >
+        <p class="footer__text">
+          Increase the flow of&nbsp;customers and sales for your business with
+          digital marketing &amp;&nbsp;growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
