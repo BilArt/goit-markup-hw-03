@@ -48,6 +48,19 @@ p {
   color: var(--iris-color);
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .title-1 {
   color: var(--white-color);
   font-size: 56px;
@@ -227,8 +240,39 @@ p {
 }
 
 /* portfolio */
+.portfolio-section__container {
+  margin-top: 72px;
+}
 
-.portfolio-section__button {
+.portfolio-section__buttons-list {
+  gap: 24px;
+  justify-content: center;
+  margin-bottom: 72px;
+}
+
+.portfolio-section__cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.portfolio-section__cards-item {
+  border: 1px solid var(--cornflower-color);
+  max-width: calc(33.333% - 8px);
+}
+
+.portfolio-section__cards-item:nth-child(3n + 1) {
+  width: 100%;
+}
+
+.cards-item__info {
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
+}
+
+.buttons-list__button {
+  padding: 12px 24px 12px 24px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -239,12 +283,12 @@ p {
   cursor: pointer;
 }
 
-.portfolio-section__button:hover {
+.buttons-list__button:hover {
   color: var(--white-color);
   background-color: var(--ocean-color);
 }
 
-.portfolio-section__button:active {
+.buttons-list__button:active {
   color: var(--white-color);
   background-color: var(--ocean-color);
 }
